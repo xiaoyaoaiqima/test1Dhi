@@ -1,0 +1,5 @@
+import 'package:equatable/equatable.dart';import 'package:flutter/material.dart';import '/core/app_export.dart';import 'package:test1/presentation/add_address_screen/models/add_address_model.dart';part 'add_address_state.dart';final addAddressNotifier = StateNotifierProvider<AddAddressNotifier, AddAddressState>((ref) => AddAddressNotifier(AddAddressState(countryController: TextEditingController(), firstNameController: TextEditingController(), lastNameController: TextEditingController(), streetaddressController: TextEditingController(), streetaddressController1: TextEditingController(), cityController: TextEditingController(), oldPasswordController: TextEditingController(), zipcodeController: TextEditingController(), phoneNumberController: TextEditingController(), addAddressModelObj: AddAddressModel())));
+/// A notifier that manages the state of a AddAddress according to the event that is dispatched to it.
+class AddAddressNotifier extends StateNotifier<AddAddressState> {AddAddressNotifier(AddAddressState state) : super(state);
+
+ }
